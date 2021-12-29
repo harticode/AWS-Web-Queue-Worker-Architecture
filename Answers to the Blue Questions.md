@@ -4,7 +4,7 @@
 FIFO queues contain roughly the same functionality as ordinary queues, with the added benefits of providing ordering and exactly-once processing, as well as ensuring that messages are transmitted and received in the same sequence.
 For simple queues message strings are kept in the same order as they were sent, but processing needs may cause the original order or sequence of messages to alter. simple queues can be used to batch messages for later processing or to distribute jobs over numerous worker nodes, for example.
 
-> Answer for Queues in General:  There are four different types of queues:
+- Answer for Queues in General:  There are four different types of queues:
 
  * Simple Queue : Insertion happens at the back of the line, while removal happens at the front. The FIFO (First in, First out) rule is carefully followed.
  * Circular Queue : The last entry in a circular queue points to the initial element, forming a circular connection. The key advantage of a circular queue over a simple queue is that it uses less memory. We can put an element in the first place if the last position is full and the first position is vacant. In a basic queue, this action is not feasible.
@@ -15,7 +15,7 @@ For simple queues message strings are kept in the same order as they were sent, 
 
 ### Question 2: In which situations is a Web-Queue-Worker architecture relevant?
 
-> Answer :
+- Answer :
  * Based on the documentation of Microsoft azure, this architecture style is For 
     * Applications with a relatively simple domain.
     * Applications with some long-running workflows or batch operations.
