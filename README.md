@@ -1,10 +1,10 @@
 # AWS-Web-Queue-Worker-Architecture
 
-### Hamza AIT BAALI
+### by Hamza AIT BAALI
 
 ## How to Run
 
- - First Clone this Repo including all submodules
+- First Clone this Repo including all submodules
 
 ### local Test without Using EC2
 
@@ -23,6 +23,9 @@
 - Create an EC2 instance
 - Log to the EC2 instance
 - Install Java SDK
+- export your AWS credentials in the EC2
+  - export AWS_ACCESS_KEY_ID=*********************
+  - export AWS_SECRET_ACCESS_KEY=****************************
 - Download the worker-cloud-0.0.1-SNAPSHOT-jar-with-dependencies.jar file into the EC2 instance using github url or SFTP
 - run ```screen``` Command to create a seprate session
   - If you run a program in SSH, and then close out ssh you can not get back into the console.That why I recommand you use screen to attach + detach a console
